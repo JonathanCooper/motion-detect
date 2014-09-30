@@ -9,10 +9,10 @@ import configuration
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
 threshold = 50
 gif_size = 20
-frame_output = '/www/motiondetect/tmp/{}.jpg'
-gif_dir = '/www/motiondetect/www/img'
+frame_output = '{}/tmp/{}.jpg'.format(configuration.project_root)
+gif_dir = '{}/www/img'.format(configuration.project_root)
 gif_name = '{}.gif'
-lock_file = '/www/motiondetect/run/lock'
+lock_file = '{}/run/lock'.format(configuration.project_root)
 y1, y2, x1, x2 = 185, 230, 355, 400
 # end config
 

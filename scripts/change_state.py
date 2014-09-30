@@ -1,6 +1,7 @@
 from optparse import OptionParser
 import sys
 import os
+import configuration
 
 # TODO: logging
 parser = OptionParser()
@@ -13,7 +14,7 @@ if not options.enable and not options.disable:
     print 'Error: Must use one of (-e|-d)'
     sys.exit(1)
 
-lock_file = '/www/motiondetect/run/lock'
+lock_file = '{}/run/lock'.format(configuration.project_root)
 
 if options.enable:
     if not os.path.isfile(lock_file):
