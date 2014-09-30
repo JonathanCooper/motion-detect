@@ -1,2 +1,2 @@
-sender = 'incident@alarm.rollingsixes.us'
-recipients = ['jonathan.cooper234@gmail.com', 'erika.rosenfried@gmail.com']
+sender = 'incident@sendingdomain.com'
+recipients = ['person1@hotmail.com', 'person2@aol.com']
