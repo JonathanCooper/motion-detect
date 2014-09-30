@@ -7,7 +7,6 @@ if (is_file($lock_file)) {
     $toggle_str = 'Activate';
 } else {
     printf('Alarm system is currently activated');
-    //printf('<br><br><a href="/toggle.php">Activate</a>');
     $toggle_str = 'Deactivate';
 }
 
