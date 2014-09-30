@@ -1,3 +1,7 @@
+*.pyc
+run/lock
 www/img/*
+www/tmp/*
 tmp/*
 scripts/configuration.py
+scripts/test*
