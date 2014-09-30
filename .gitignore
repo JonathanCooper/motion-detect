@@ -5,3 +5,4 @@ www/tmp/*
 tmp/*
 scripts/configuration.py
 scripts/test*
+scripts/make_examples.py
