@@ -1,2 +1,3 @@
 sender = 'incident@sendingdomain.com'
 recipients = ['person1@hotmail.com', 'person2@aol.com']
+web_app_host = 'yourdomain.com:8080'

@@ -3,6 +3,7 @@ import time
 import os
 from functions import send_alert
 import logging
+import configuration
 
 # begin config
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
@@ -74,7 +75,10 @@ while True:
         for used in file_names:
             os.remove(used)
         logging.debug('sending alert')
-        send_alert('http://alarm.rollingsixes.us:8080/img/{}'.format(gif_name.format(now)))
+        send_alert('http://{}/img/{}'.format(
+            configuration.web_app_host,
+            gif_name.format(now))
+            )
         found = True
         logging.debug('alert sent, releasing cam and deactivating')
         cam.release()

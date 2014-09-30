@@ -19,9 +19,9 @@ def send_alert(uri):
 The system has been deactivated.
 <br><br>
 Click here to activate the alarm system:
-<form action="http://alarm.rollingsixes.us:8080/toggle?action=Activate" method="POST"><input type="submit" value="Activate"></form>
+<form action="http://{}/toggle?action=Activate" method="POST"><input type="submit" value="Activate"></form>
 </body>
-</html>'''.format(uri)
+</html>'''.format(uri, configuration.web_app_host)
     part1 = MIMEText(body, 'html')
     msg.attach(part1)
     s = smtplib.SMTP('localhost')
