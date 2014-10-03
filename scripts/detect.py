@@ -13,7 +13,10 @@ frame_output = '{}/tmp/{}.jpg'.format(configuration.project_root)
 gif_dir = '{}/www/img'.format(configuration.project_root)
 gif_name = '{}.gif'
 lock_file = '{}/run/lock'.format(configuration.project_root)
-y1, y2, x1, x2 = 185, 230, 355, 400 # these are the corners of the rectangle you will use for motion detection; in my case, the top-right corner of my door
+y1, y2, x1, x2 = 185, 230, 355, 400 # these are the corners of the rectangle
+#   you will use for motion detection; in my case, the top-right corner
+#   of my door
+#
 # end config
 
 def diffImg(t0, t1, t2):
