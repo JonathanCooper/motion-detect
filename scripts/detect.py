@@ -83,9 +83,3 @@ while True:
         open(lock_file, 'w').close()
         os.chown(lock_file, 81, 81)
         time.sleep(30)
-    #else:
-    #    logging.debug('no motion detected')
-    #time.sleep()
-    
-if not found:
-    print 'No motion detected'
