@@ -27,11 +27,6 @@ def diffImg(t0, t1, t2):
     scalar = cv2.sumElems(result)
     return scalar
 
-#cam = cv2.VideoCapture(0)
-#f1 = cv2.cvtColor(cam.read()[1], cv2.COLOR_RGB2GRAY)[y1:y2, x1:x2]
-#f2 = cv2.cvtColor(cam.read()[1], cv2.COLOR_RGB2GRAY)[y1:y2, x1:x2]
-#f3 = cv2.cvtColor(cam.read()[1], cv2.COLOR_RGB2GRAY)[y1:y2, x1:x2]
-
 found = False
 while True:
     if os.path.isfile(lock_file):
