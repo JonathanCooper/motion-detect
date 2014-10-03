@@ -8,4 +8,4 @@ I am performing the motion detection on the area within the green rectangle:
 
 ![alt tag](https://github.com/JonathanCooper/motion-detect/blob/master/doc/example-boxed.jpg)
 
-I run detect.py as a deamon.  When it detects motion, it makes a nice animated gif of the "incident" and sends me an email!
+I run scripts/detect.py as a deamon.  When it detects motion, it makes a nice animated gif of the "incident" and sends me an email!
